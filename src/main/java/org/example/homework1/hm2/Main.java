@@ -1,11 +1,11 @@
 package org.example.homework1.hm2;
 
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println(countPositiveNumbers());
     }
 
@@ -25,8 +25,8 @@ public class Main {
             try
             {
                 currentNumber = scanner.nextInt();
-
-            } catch (InputMismatchException e)
+            }
+            catch (InputMismatchException e)
             {
                 System.out.println("Вводите только числа!");
                 scanner.nextLine();
