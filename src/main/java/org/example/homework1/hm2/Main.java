@@ -3,7 +3,8 @@ package org.example.homework1.hm2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Main
+{
     public static void main(String[] args)
     {
         System.out.println(countPositiveNumbers());
