@@ -20,7 +20,7 @@ public class Main
 
         for (Product product : products)
         {
-            if (product.getName().contains("высший"))
+            if (product.getName().contains("высший") && product.getGrade() == 1)
             {
                 if (maxFirstGradeCost < product.getCost())
                 {
@@ -28,7 +28,7 @@ public class Main
                     currentMaxFirstGradeProduct = product;
                 }
             }
-            else if (product.getName().contains("высший"))
+            else if (product.getName().contains("высший") && product.getGrade() == 2)
             {
                 if (maxSecondGradeCost < product.getCost())
                 {
@@ -41,7 +41,7 @@ public class Main
         System.out.println(currentMaxFirstGradeProduct.toString());
         System.out.println(currentMaxSecondGradeProduct.toString());
 
-       /*
+         /*
         maxGradeCost = -1;
         currentMaxGradeProduct = null;
 
